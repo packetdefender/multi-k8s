@@ -1,7 +1,7 @@
 #Build Docker images
 docker build -t mlossmann/multi-client:latest -t mlossmann/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t mlossmann/multi-server:latest -t mlossmann/multi-server:$SHA -f ./server/Dockerfile ./server
-docker built -t mlossmann/multi-worker:latest -t mlossmann/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t mlossmann/multi-worker:latest -t mlossmann/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 #Push images to docker
 docker push mlossmann/multi-client:latest 
