@@ -9,12 +9,10 @@ spec:
     kind: ClusterIssuer
   commonName: nuagenet.net
   dnsNames:
-    - nuagenet.net
     - www.nuagenet.net
   acme:
     config:
       -http01:
         ingressClass: nginx
       domains:
-        - nuagenet.net
         - www.nuagenet.net
