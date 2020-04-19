@@ -9,7 +9,7 @@ spec:
     kind: ClusterIssuer
   commonName: k8s-nuagenet-net
   dnsNames:
-    - www.nuagenet-netm
+    - www.nuagenet.net
   acme:
     config:
       - http01:
