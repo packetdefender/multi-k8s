@@ -16,5 +16,5 @@ kubectl apply -f k8s
 
 #Set imperative for image upgrade
 kubectl set image deployments/server-deployment server=mlossmann/multi-server:$SHA
-kubectl set image deployments/worker-deployment server=mlossmann/multi-worker:$SHA
-kubectl set image deployments/client-deployment server=mlossmann/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=mlossmann/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=mlossmann/multi-client:$SHA
