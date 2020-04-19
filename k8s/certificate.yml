@@ -15,4 +15,4 @@ spec:
       - http01:
           ingressClass: nginx
         domains:
-          - www.nuagenet-net
+          - www.nuagenet.net
