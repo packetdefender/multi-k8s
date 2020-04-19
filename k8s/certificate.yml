@@ -1,13 +1,13 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: k8s-nuagenet-net
+  name: k8s-nuagenet-net-tls
 spec:
   secretName: k8s-nuagenet-net
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: k8s-nuagenet-net
+  commonName: nuagenet.net
   dnsNames:
     - www.nuagenet.net
   acme:
